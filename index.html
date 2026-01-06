@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CDC Screen-Set Demo</title>
+  <script src="https://cdns.gigya.com/js/gigya.js?apikey=YOUR_API_KEY"></script>
+</head>
+<body>
+
+  <h2>CDC Screen-Set Demo</h2>
+
+  <button onclick="openLogin()">Login / Register</button>
+
+  <script>
+    function openLogin() {
+      gigya.accounts.showScreenSet({
+        screenSet: "Default-RegistrationLogin",
+        startScreen: "gigya-login-screen"
+      });
+    }
+  </script>
+
+</body>
+</html>
